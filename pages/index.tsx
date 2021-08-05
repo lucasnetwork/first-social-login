@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
-
-import Router from 'next/router'
+import {FcGoogle} from 'react-icons/fc'
 export default function Home() {
 
   return (
@@ -13,10 +12,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <div>
+    <h1>Logar com a conta google</h1>
         <Link href="/api/google">
-     <a  className={styles.google} >Google</a>
+     <a  className={styles.google} ><FcGoogle size={24}/> <p>Google</p></a>
         </Link>
-     <button className={styles.facebook}>Facebook</button>
+        </div>
 
       </main>
     </div>
